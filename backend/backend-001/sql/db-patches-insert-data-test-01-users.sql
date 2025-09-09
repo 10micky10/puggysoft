@@ -136,7 +136,10 @@ INSERT INTO users (username, password, dni, name, second_name, last_name, second
 ("SysUpeaPagosAdmin", "admin123", "1000046", "N/A", "N/A", "N/A", "N/A", "1990-01-01", 27, 'MALE', 'Ing. Sistemas', "60795091", "Av. Wiracocha", "SysUpeaPagosAdmin@puggysoft.com", true, null, "SysAdmin",  true),
 ("SysUpeaPagosEncargado", "admin123", "1000047", "N/A", "N/A", "N/A", "N/A", "1990-01-01", 27, 'MALE', 'Ing. Sistemas', "60795092", "Av. Wiracocha", "SysUpeaPagosEncargado@puggysoft.com", true, null, "SysAdmin",  true),
 ("SysUpeaEstudiante", "admin123", "1000048", "N/A", "N/A", "N/A", "N/A", "1990-01-01", 27, 'MALE', 'Ing. Sistemas', "60795092", "Av. Wiracocha", "SysUpeaEstudiante@puggysoft.com", true, null, "SysAdmin",  true),
-("SysEscuelaAdmin", "admin123", "1000017", "N/A", "N/A", "N/A", "N/A", "1990-01-01", 27, 'MALE', 'Ing. Sistemas', "60795090", "Av. Wiracocha", "SysEscuelaAdmin@puggysoft.com", true, null, "SysAdmin",  true);
+("SysEscuelaAdmin", "admin123", "1000017", "N/A", "N/A", "N/A", "N/A", "1990-01-01", 27, 'MALE', 'Ing. Sistemas', "60795090", "Av. Wiracocha", "SysEscuelaAdmin@puggysoft.com", true, null, "SysAdmin",  true),
+("SysPagosAdmin", "admin123", "1000049", "N/A", "N/A", "N/A", "N/A", "1990-01-01", 27, 'MALE', 'Ing. Sistemas', "60795091", "Av. Wiracocha", "SysPagosAdmin@puggysoft.com", true, null, "SysAdmin",  true),
+("SysPagosEncargado", "admin123", "1000050", "N/A", "N/A", "N/A", "N/A", "1990-01-01", 27, 'MALE', 'Ing. Sistemas', "60795092", "Av. Wiracocha", "SysPagosEncargado@puggysoft.com", true, null, "SysAdmin",  true),
+("SysEstudiante", "admin123", "1000051", "N/A", "N/A", "N/A", "N/A", "1990-01-01", 27, 'MALE', 'Ing. Sistemas', "60795092", "Av. Wiracocha", "SysEstudiante@puggysoft.com", true, null, "SysAdmin",  true);
 
 -- Insert data (Roles).
 INSERT INTO roles (name, created_by) VALUES ("ADMIN", "admin"); -- 1000
@@ -174,6 +177,8 @@ INSERT INTO roles (name, created_by) VALUES ("CONDOMINIO_ENCARGADO", "admin");
 INSERT INTO roles (name, created_by) VALUES ("MENSUALIDAD_ENCARGADO", "admin");
 INSERT INTO roles (name, created_by) VALUES ("UPEA_PAGOS_ENCARGADO", "admin");
 INSERT INTO roles (name, created_by) VALUES ("UPEA_ESTUDIANTE", "admin");
+INSERT INTO roles (name, created_by) VALUES ("PAGOS_ENCARGADO", "admin");
+INSERT INTO roles (name, created_by) VALUES ("ESTUDIANTE", "admin");
 
 -- TENANTS
 INSERT INTO tenants (name, short_name, status, description, created_by) VALUES
@@ -228,9 +233,6 @@ INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES
 ((select id from users where username='SysEscuelaEstudiante'), (select id from roles where name='SCHOOL_ESTUDIANTE'), "SysAdmin", "EMPRESA_1"),
 ((select id from users where username='SysMensualidadAdmin'), (select id from roles where name='ADMIN_USERS'), "SysAdmin", "EMPRESA_1"),
 ((select id from users where username='SysMensualidadEncargado'), (select id from roles where name='MENSUALIDAD_ENCARGADO'), "SysAdmin", "EMPRESA_1"),
-((select id from users where username='SysUpeaPagosAdmin'), (select id from roles where name='ADMIN_USERS'), "SysAdmin", "EMPRESA_1"),
-((select id from users where username='SysUpeaPagosEncargado'), (select id from roles where name='UPEA_PAGOS_ENCARGADO'), "SysAdmin", "EMPRESA_1"),
-((select id from users where username='SysUpeaEstudiante'), (select id from roles where name='UPEA_ESTUDIANTE'), "SysAdmin", "EMPRESA_1"),
 ((select id from users where username='SysEscuelaAdmin'), (select id from roles where name='ADMIN_USERS'), "SysAdmin", "EMPRESA_1");
 
 INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES
@@ -275,9 +277,6 @@ INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES
 ((select id from users where username='SysEscuelaEstudiante'), (select id from roles where name='SCHOOL_ESTUDIANTE'), "SysAdmin", "EMPRESA_2"),
 ((select id from users where username='SysMensualidadAdmin'), (select id from roles where name='ADMIN_USERS'), "SysAdmin", "EMPRESA_2"),
 ((select id from users where username='SysMensualidadEncargado'), (select id from roles where name='MENSUALIDAD_ENCARGADO'), "SysAdmin", "EMPRESA_2"),
-((select id from users where username='SysUpeaPagosAdmin'), (select id from roles where name='ADMIN_USERS'), "SysAdmin", "EMPRESA_2"),
-((select id from users where username='SysUpeaPagosEncargado'), (select id from roles where name='UPEA_PAGOS_ENCARGADO'), "SysAdmin", "EMPRESA_2"),
-((select id from users where username='SysUpeaEstudiante'), (select id from roles where name='UPEA_ESTUDIANTE'), "SysAdmin", "EMPRESA_2"),
 ((select id from users where username='SysEscuelaAdmin'), (select id from roles where name='ADMIN_USERS'), "SysAdmin", "EMPRESA_2");
 
 -- Insert data (User-Roles).
@@ -398,9 +397,6 @@ INSERT INTO tenants_users (username, tenant, created_by) VALUES
 ('SysEscuelaEstudiante', 'EMPRESA_2', 'SysAdmin'),
 ('SysMensualidadAdmin', 'EMPRESA_2', 'SysAdmin'),
 ('SysMensualidadEncargado', 'EMPRESA_2', 'SysAdmin'),
-('SysUpeaPagosAdmin', 'EMPRESA_2', 'SysAdmin'),
-('SysUpeaPagosEncargado', 'EMPRESA_2', 'SysAdmin'),
-('SysUpeaEstudiante', 'EMPRESA_2', 'SysAdmin'),
 ('SysEscuelaAdmin', 'EMPRESA_2', 'SysAdmin');
 
 
@@ -449,10 +445,6 @@ INSERT INTO tenants_roles (role, tenant, created_by) VALUES
 ('SCHOOL_ESTUDIANTE', 'EMPRESA_2', "admin"),
 ('MENSUALIDAD_ENCARGADO', 'EMPRESA_1', "admin"),
 ('MENSUALIDAD_ENCARGADO', 'EMPRESA_2', "admin"),
-('UPEA_PAGOS_ENCARGADO', 'EMPRESA_1', "admin"),
-('UPEA_PAGOS_ENCARGADO', 'EMPRESA_2', "admin"),
-('UPEA_ESTUDIANTE', 'EMPRESA_1', "admin"),
-('UPEA_ESTUDIANTE', 'EMPRESA_2', "admin"),
 ('ALCALDIA_RECURSOS_MUNICIPALES_CAJERO', 'EMPRESA_1', "admin");
 
 -- ALCALDIA PRODUCCION
@@ -478,3 +470,47 @@ INSERT INTO tenants_roles (role, tenant, created_by) VALUES
 ('ALCALDIA_RECURSOS_MUNICIPALES_ENCARGADO', 'COLCAPIRHUA', "SysAdmin"),
 ('ALCALDIA_RECURSOS_MUNICIPALES_CAJERO', 'COLCAPIRHUA', "SysAdmin"),
 ('URBANISMO_ENCARGADO', 'COLCAPIRHUA', "SysAdmin");
+
+-- UPEA
+INSERT INTO tenants (name, short_name, status, description, created_by) VALUES ('UPEA', 'UPEA', 'ACTIVE', 'UNIVERSIDAD PUBLICA DE EL ALTO', 'SysAdmin');
+
+-- USERS - ROLES
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES
+((select id from users where username='SysUpeaPagosAdmin'), (select id from roles where name='ADMIN_USERS'), "SysAdmin", "UPEA"),
+((select id from users where username='SysUpeaPagosEncargado'), (select id from roles where name='UPEA_PAGOS_ENCARGADO'), "SysAdmin", "UPEA"),
+((select id from users where username='SysUpeaEstudiante'), (select id from roles where name='UPEA_ESTUDIANTE'), "SysAdmin", "UPEA");
+
+-- USERS - TENANTS
+INSERT INTO tenants_users(username, tenant, created_by) VALUES
+('SysUpeaPagosAdmin', 'UPEA', 'SysAdmin'),
+('SysUpeaPagosEncargado', 'UPEA', 'SysAdmin'),
+('SysUpeaEstudiante', 'UPEA', 'SysAdmin');
+
+-- TENANTS - ROLES
+INSERT INTO tenants_roles (role, tenant, created_by) VALUES
+('ADMIN', 'UPEA', "SysAdmin"),
+('ADMIN_USERS', 'UPEA', "SysAdmin"),
+('UPEA_PAGOS_ENCARGADO', 'UPEA', "admin"),
+('UPEA_ESTUDIANTE', 'UPEA', "admin");
+
+-- ACADEMIA GENESIS
+INSERT INTO tenants (name, short_name, status, description, created_by) VALUES ('ACADEMIA GENESIS', 'ACADEMIA_GENESIS', 'ACTIVE', 'ACADEMIA TECNOLOGICA GENESIS', 'SysAdmin');
+
+-- USERS - ROLES
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES
+((select id from users where username='SysPagosAdmin'), (select id from roles where name='ADMIN_USERS'), "SysAdmin", "ACADEMIA_GENESIS"),
+((select id from users where username='SysPagosEncargado'), (select id from roles where name='PAGOS_ENCARGADO'), "SysAdmin", "ACADEMIA_GENESIS"),
+((select id from users where username='SysEstudiante'), (select id from roles where name='ESTUDIANTE'), "SysAdmin", "ACADEMIA_GENESIS");
+
+-- USERS - TENANTS
+INSERT INTO tenants_users(username, tenant, created_by) VALUES
+('SysPagosAdmin', 'ACADEMIA_GENESIS', 'SysAdmin'),
+('SysPagosEncargado', 'ACADEMIA_GENESIS', 'SysAdmin'),
+('SysEstudiante', 'ACADEMIA_GENESIS', 'SysAdmin');
+
+-- TENANTS - ROLES
+INSERT INTO tenants_roles (role, tenant, created_by) VALUES
+('ADMIN', 'ACADEMIA_GENESIS', "SysAdmin"),
+('ADMIN_USERS', 'ACADEMIA_GENESIS', "SysAdmin"),
+('PAGOS_ENCARGADO', 'ACADEMIA_GENESIS', "admin"),
+('ESTUDIANTE', 'ACADEMIA_GENESIS', "admin");
