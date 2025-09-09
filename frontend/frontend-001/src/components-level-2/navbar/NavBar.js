@@ -1181,43 +1181,51 @@ function NavBar () {
             </NavDropdown>}
 
           {/* ******* ******* ******* MENSUALIDAD SYSTEM ******* ******* ********/}
-          {(userRoles.includes(enumRoles.MENSUALIDAD_ENCARGADO)) &&
+          {(userRoles.includes(enumRoles.MENSUALIDAD_ENCARGADO) ||
+            userRoles.includes(enumRoles.PAGOS_ENCARGADO)) &&
           <NavDropdown title={cuotaPagoAdminLabel}>
             <NavDropdown.Item onClick={navigateCuotaPagoForm}>{cuotaPagoRegistrationLabel}</NavDropdown.Item>
             <NavDropdown.Item onClick={navigateCuotaPagoTable}>{cuotaPagoTableLabel}</NavDropdown.Item>
             <NavDropdown.Item onClick={navigateAssignCuotaPagoStep1}>{assigncuotaPagoLabel}</NavDropdown.Item>
           </NavDropdown>}
-          {userRoles.includes(enumRoles.MENSUALIDAD_ENCARGADO) &&
+          {(userRoles.includes(enumRoles.MENSUALIDAD_ENCARGADO) ||
+            userRoles.includes(enumRoles.PAGOS_ENCARGADO)) &&
             <NavDropdown title={escuelaCursosAdminLabel}>
               <NavDropdown.Item onClick={navigateCursosForm}>{escuelaCursosFormLabel}</NavDropdown.Item>
               <NavDropdown.Item onClick={navigateCursosTable}>{escuelaCursosTableLabel}</NavDropdown.Item>
             </NavDropdown>}
-          {userRoles.includes(enumRoles.MENSUALIDAD_ENCARGADO) &&
+          {(userRoles.includes(enumRoles.MENSUALIDAD_ENCARGADO) ||
+            userRoles.includes(enumRoles.PAGOS_ENCARGADO)) &&
             <NavDropdown title={escuelaEstudiantesAdminLabel}>
               <NavDropdown.Item onClick={navigateEstudiantesForm}>{escuelaEstudiantesFormLabel}</NavDropdown.Item>
               <NavDropdown.Item onClick={navigateEstudiantesTable}>{escuelaEstudiantesTableLabel}</NavDropdown.Item>
               <NavDropdown.Item onClick={navigateEstudiantesCursos}>{escuelaEstudiantesCursoLabel}</NavDropdown.Item>
             </NavDropdown>}
-          {userRoles.includes(enumRoles.MENSUALIDAD_ENCARGADO) &&
+          {(userRoles.includes(enumRoles.MENSUALIDAD_ENCARGADO) ||
+            userRoles.includes(enumRoles.PAGOS_ENCARGADO)) &&
             <NavDropdown title={pagoAdminLabel}>
               <NavDropdown.Item onClick={navigateMensualidadVentaStep1Encargado}>{pagoRegistrationLabel}</NavDropdown.Item>
               <NavDropdown.Item onClick={navigateMensualidadPagosTablaEncargado}>{pagoTableLabel}</NavDropdown.Item>
             </NavDropdown>}
-          {userRoles.includes(enumRoles.SCHOOL_ESTUDIANTE) &&
+          {(userRoles.includes(enumRoles.SCHOOL_ESTUDIANTE) ||
+            userRoles.includes(enumRoles.ESTUDIANTE)) &&
             <NavDropdown title={pagoAdminLabel}>
               <NavDropdown.Item onClick={navigateMensualidadVentaStep1Estudiante}>{pagoRegistrationLabel}</NavDropdown.Item>
               <NavDropdown.Item onClick={navigateMensualidadPagosTablaEstudiante}>{pagoTableLabel}</NavDropdown.Item>
             </NavDropdown>}
-          {userRoles.includes(enumRoles.MENSUALIDAD_ENCARGADO) &&
+          {(userRoles.includes(enumRoles.MENSUALIDAD_ENCARGADO) ||
+            userRoles.includes(enumRoles.PAGOS_ENCARGADO)) &&
             <NavDropdown title={hisrotyAdminLabel}>
               <NavDropdown.Item onClick={navigateMensualidadHistoryPaymentsEncargado}>{hisrotyEncargadoLabel}</NavDropdown.Item>
               <NavDropdown.Item onClick={navigateMensualidadHistoryPaymentsByCourseEncargado}>{hisrotyByCourseEncargadoLabel}</NavDropdown.Item>
             </NavDropdown>}
-          {userRoles.includes(enumRoles.SCHOOL_ESTUDIANTE) &&
+          {(userRoles.includes(enumRoles.SCHOOL_ESTUDIANTE) ||
+            userRoles.includes(enumRoles.ESTUDIANTE)) &&
             <NavDropdown title={hisrotyAdminLabel}>
               <NavDropdown.Item onClick={navigateMensualidadHistoryPaymentsEstudiante}>{hisrotyEstudianteLabel}</NavDropdown.Item>
             </NavDropdown>}
-          {userRoles.includes(enumRoles.SCHOOL_ESTUDIANTE) &&
+          {(userRoles.includes(enumRoles.SCHOOL_ESTUDIANTE) ||
+            userRoles.includes(enumRoles.ESTUDIANTE)) &&
             <NavDropdown title={escuelaCalificacionesAdmin}>
               <NavDropdown.Item onClick={navigateCalificacionesViewEstuduante}>{escuelaReporteEstudiantesNotaFinalMateria}</NavDropdown.Item>
               <NavDropdown.Item onClick={navigateReporteNotaFinalMateriasViewEstudiante}>{escuelaCalificacionesView}</NavDropdown.Item>
