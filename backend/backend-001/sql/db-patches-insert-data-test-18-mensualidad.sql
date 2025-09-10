@@ -175,53 +175,29 @@ INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUE
 -- ACADEMIA GENESIS
 
 -- DISEÑO PROG SISTEM MONITOREO LOCAL REMOTO CON PLC HMIS WEB
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("MATRICULA 1 DP_MLR", 0, 1000, 9999999, "10/09/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("1era. CUOTA DP_MLR", 0, 1000, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("2da. CUOTA DP_MLR", 0, 1000, 9999999, "15/11/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
+INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("CUOTA DP_MLR", 0, 150, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
 -- CREACION PAGO CAMPAÑAS PUBLICITARIAS TIK TOK FACEBOOK
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("MATRICULA 1 CPAGC_TIK_FA", 0, 1000, 9999999, "10/09/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("1era. CUOTA CPAGC_TIK_FA", 0, 1000, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("2da. CUOTA CPAGC_TIK_FA", 0, 1000, 9999999, "15/11/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
+INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("CUOTA CPAGC_TIK_FA", 0, 120, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
 -- MANIOBRAS PROCEDIMIENTO LINEAS ENERGIZADA ALTA TENSION
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("MATRICULA 1 MPROC_AT", 0, 1000, 9999999, "10/09/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("1era. CUOTA MPROC_AT", 0, 1000, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("2da. CUOTA MPROC_AT", 0, 1000, 9999999, "15/11/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
+INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("CUOTA MPROC_AT", 0, 150, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
 -- DETECCION FALLAS EQUIPOS IMAGENOLOGIA SOLUCIONES GARANTIAS
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("MATRICULA 1 DEFAEQ_SOLUC", 0, 1000, 9999999, "10/09/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("1era. CUOTA DEFAEQ_SOLUC", 0, 1000, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("2da. CUOTA DEFAEQ_SOLUC", 0, 1000, 9999999, "15/11/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
+INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("CUOTA DEFAEQ_SOLUC", 0, 200, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
 -- SIST. INMOVILIZADORES Y PROGRAMACION VEHICULAR
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("MATRICULA 1 SINMV_PROGVEH", 0, 1000, 9999999, "10/09/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("1era. CUOTA SINMV_PROGVEH", 0, 1000, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("2da. CUOTA SINMV_PROGVEH", 0, 1000, 9999999, "15/11/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
+INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("CUOTA SINMV_PROGVEH", 0, 150, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
 -- TOPOGRAFIA MODELADO PARA LINEAS ALTA TENSION
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("MATRICULA 1 TOP_LINALT", 0, 1000, 9999999, "10/09/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("1era. CUOTA TOP_LINALT", 0, 1000, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("2da. CUOTA TOP_LINALT", 0, 1000, 9999999, "15/11/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
+INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("CUOTA TOP_LINALT", 0, 120, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
 -- VULNERACION INTRUSION EN REDES Y SIST. INFORMATICOS
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("MATRICULA 1 VIRE_SISINF", 0, 1000, 9999999, "10/09/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("1era. CUOTA VIRE_SISINF", 0, 1000, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("2da. CUOTA VIRE_SISINF", 0, 1000, 9999999, "15/11/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
+INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("CUOTA VIRE_SISINF", 0, 150, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
 -- ENCR. VPN SEGURIDAD REDES EMPRESARIALES E IND
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("MATRICULA 1 ENC_VPN_SEG", 0, 1000, 9999999, "10/09/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("1era. CUOTA ENC_VPN_SEG", 0, 1000, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("2da. CUOTA ENC_VPN_SEG", 0, 1000, 9999999, "15/11/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
+INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("CUOTA ENC_VPN_SEG", 0, 150, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
 -- REACONDICIONAMIENTO Y RE DISEÑO ELEVADORES CARGA
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("MATRICULA 1 REAC_ELECARG", 0, 1000, 9999999, "10/09/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("1era. CUOTA REAC_ELECARG", 0, 1000, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("2da. CUOTA REAC_ELECARG", 0, 1000, 9999999, "15/11/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
+INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("CUOTA REAC_ELECARG", 0, 200, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
 -- CONSTRUCCION Y RECONSTRUCCION DE DE CAPAS ASFALTICAS
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("MATRICULA 1 CONS_CAPASFA", 0, 1000, 9999999, "10/09/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("1era. CUOTA CONS_CAPASFA", 0, 1000, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("2da. CUOTA CONS_CAPASFA", 0, 1000, 9999999, "15/11/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
+INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("CUOTA CONS_CAPASFA", 0, 120, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
 -- AUDITORIA FORENSE EMPRESARIAL
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("MATRICULA 1 AUD_FOR_EMPR", 0, 1000, 9999999, "10/09/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("1era. CUOTA AUD_FOR_EMPR", 0, 1000, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("2da. CUOTA AUD_FOR_EMPR", 0, 1000, 9999999, "15/11/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
+INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("CUOTA AUD_FOR_EMPR", 0, 100, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
 -- DISEÑO COSTOS Y RECONSTRUCCION DRYWALL
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("MATRICULA 1 DIS_REC_DRY", 0, 1000, 9999999, "10/09/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("1era. CUOTA DIS_REC_DRY", 0, 1000, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
-INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("2da. CUOTA DIS_REC_DRY", 0, 1000, 9999999, "15/11/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
+INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("CUOTA DIS_REC_DRY", 0, 120, 9999999, "16/10/2023", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
 
 -- ******* MENSUALIDADES POR MES *******
 INSERT INTO products (name, purchase_price, sale_price, stock, description, image, bar_code, location, minimum_stock, code, tenant) VALUES ("ENERO", 0, 1000, 9999999, "07/02/2026", null, null, "N/A", null, null, "ACADEMIA_GENESIS");
@@ -264,61 +240,37 @@ INSERT INTO escuela_cursos (name, short_name, gestion, tenant, created_by, creat
 INSERT INTO escuela_cursos (name, short_name, gestion, tenant, created_by, creation_date) VALUES ("DISEÑO COSTOS Y RECONSTRUCCION DRYWALL", "DIS_REC_DRY", "2023", "ACADEMIA_GENESIS", "SysEscuelaAdmin", "2021-11-01");
 
 -- DISEÑO PROG SISTEM MONITOREO LOCAL REMOTO CON PLC HMIS WEB
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="MATRICULA 1 DP_MLR"), (select id from product_groups where name="DISEÑO PROG SISTEM MONITOREO LOCAL REMOTO CON PLC HMIS WEB"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="1era. CUOTA DP_MLR"), (select id from product_groups where name="DISEÑO PROG SISTEM MONITOREO LOCAL REMOTO CON PLC HMIS WEB"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="2da. CUOTA DP_MLR"), (select id from product_groups where name="DISEÑO PROG SISTEM MONITOREO LOCAL REMOTO CON PLC HMIS WEB"), "ACADEMIA_GENESIS");
+INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="CUOTA DP_MLR"), (select id from product_groups where name="DISEÑO PROG SISTEM MONITOREO LOCAL REMOTO CON PLC HMIS WEB"), "ACADEMIA_GENESIS");
 
 -- CREACION PAGO CAMPAÑAS PUBLICITARIAS TIK TOK FACEBOOK
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="MATRICULA 1 CPAGC_TIK_FA"), (select id from product_groups where name="CREACION PAGO CAMPAÑAS PUBLICITARIAS TIK TOK FACEBOOK"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="1era. CUOTA CPAGC_TIK_FA"), (select id from product_groups where name="CREACION PAGO CAMPAÑAS PUBLICITARIAS TIK TOK FACEBOOK"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="2da. CUOTA CPAGC_TIK_FA"), (select id from product_groups where name="CREACION PAGO CAMPAÑAS PUBLICITARIAS TIK TOK FACEBOOK"), "ACADEMIA_GENESIS");
+INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="CUOTA CPAGC_TIK_FA"), (select id from product_groups where name="CREACION PAGO CAMPAÑAS PUBLICITARIAS TIK TOK FACEBOOK"), "ACADEMIA_GENESIS");
 
 -- MANIOBRAS PROCEDIMIENTO LINEAS ENERGIZADA ALTA TENSION
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="MATRICULA 1 MPROC_AT"), (select id from product_groups where name="MANIOBRAS PROCEDIMIENTO LINEAS ENERGIZADA ALTA TENSION"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="1era. CUOTA MPROC_AT"), (select id from product_groups where name="MANIOBRAS PROCEDIMIENTO LINEAS ENERGIZADA ALTA TENSION"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="2da. CUOTA MPROC_AT"), (select id from product_groups where name="MANIOBRAS PROCEDIMIENTO LINEAS ENERGIZADA ALTA TENSION"), "ACADEMIA_GENESIS");
+INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="CUOTA MPROC_AT"), (select id from product_groups where name="MANIOBRAS PROCEDIMIENTO LINEAS ENERGIZADA ALTA TENSION"), "ACADEMIA_GENESIS");
 
 -- DETECCION FALLAS EQUIPOS IMAGENOLOGIA SOLUCIONES GARANTIAS
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="MATRICULA 1 DEFAEQ_SOLUC"), (select id from product_groups where name="DETECCION FALLAS EQUIPOS IMAGENOLOGIA SOLUCIONES GARANTIAS"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="1era. CUOTA DEFAEQ_SOLUC"), (select id from product_groups where name="DETECCION FALLAS EQUIPOS IMAGENOLOGIA SOLUCIONES GARANTIAS"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="2da. CUOTA DEFAEQ_SOLUC"), (select id from product_groups where name="DETECCION FALLAS EQUIPOS IMAGENOLOGIA SOLUCIONES GARANTIAS"), "ACADEMIA_GENESIS");
+INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="CUOTA DEFAEQ_SOLUC"), (select id from product_groups where name="DETECCION FALLAS EQUIPOS IMAGENOLOGIA SOLUCIONES GARANTIAS"), "ACADEMIA_GENESIS");
 
 -- SIST. INMOVILIZADORES Y PROGRAMACION VEHICULAR
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="MATRICULA 1 SINMV_PROGVEH"), (select id from product_groups where name="SIST. INMOVILIZADORES Y PROGRAMACION VEHICULAR"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="1era. CUOTA SINMV_PROGVEH"), (select id from product_groups where name="SIST. INMOVILIZADORES Y PROGRAMACION VEHICULAR"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="2da. CUOTA SINMV_PROGVEH"), (select id from product_groups where name="SIST. INMOVILIZADORES Y PROGRAMACION VEHICULAR"), "ACADEMIA_GENESIS");
+INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="CUOTA SINMV_PROGVEH"), (select id from product_groups where name="SIST. INMOVILIZADORES Y PROGRAMACION VEHICULAR"), "ACADEMIA_GENESIS");
 
 -- TOPOGRAFIA MODELADO PARA LINEAS ALTA TENSION
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="MATRICULA 1 TOP_LINALT"), (select id from product_groups where name="TOPOGRAFIA MODELADO PARA LINEAS ALTA TENSION"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="1era. CUOTA TOP_LINALT"), (select id from product_groups where name="TOPOGRAFIA MODELADO PARA LINEAS ALTA TENSION"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="2da. CUOTA TOP_LINALT"), (select id from product_groups where name="TOPOGRAFIA MODELADO PARA LINEAS ALTA TENSION"), "ACADEMIA_GENESIS");
+INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="CUOTA TOP_LINALT"), (select id from product_groups where name="TOPOGRAFIA MODELADO PARA LINEAS ALTA TENSION"), "ACADEMIA_GENESIS");
 
 -- VULNERACION INTRUSION EN REDES Y SIST. INFORMATICOS
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="MATRICULA 1 VIRE_SISINF"), (select id from product_groups where name="VULNERACION INTRUSION EN REDES Y SIST. INFORMATICOS"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="1era. CUOTA VIRE_SISINF"), (select id from product_groups where name="VULNERACION INTRUSION EN REDES Y SIST. INFORMATICOS"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="2da. CUOTA VIRE_SISINF"), (select id from product_groups where name="VULNERACION INTRUSION EN REDES Y SIST. INFORMATICOS"), "ACADEMIA_GENESIS");
+INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="CUOTA VIRE_SISINF"), (select id from product_groups where name="VULNERACION INTRUSION EN REDES Y SIST. INFORMATICOS"), "ACADEMIA_GENESIS");
 
 -- ENCR. VPN SEGURIDAD REDES EMPRESARIALES E IND
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="MATRICULA 1 ENC_VPN_SEG"), (select id from product_groups where name="ENCR. VPN SEGURIDAD REDES EMPRESARIALES E IND"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="1era. CUOTA ENC_VPN_SEG"), (select id from product_groups where name="ENCR. VPN SEGURIDAD REDES EMPRESARIALES E IND"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="2da. CUOTA ENC_VPN_SEG"), (select id from product_groups where name="ENCR. VPN SEGURIDAD REDES EMPRESARIALES E IND"), "ACADEMIA_GENESIS");
+INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="CUOTA ENC_VPN_SEG"), (select id from product_groups where name="ENCR. VPN SEGURIDAD REDES EMPRESARIALES E IND"), "ACADEMIA_GENESIS");
 
 -- REACONDICIONAMIENTO Y RE DISEÑO ELEVADORES CARGA
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="MATRICULA 1 REAC_ELECARG"), (select id from product_groups where name="REACONDICIONAMIENTO Y RE DISEÑO ELEVADORES CARGA"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="1era. CUOTA REAC_ELECARG"), (select id from product_groups where name="REACONDICIONAMIENTO Y RE DISEÑO ELEVADORES CARGA"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="2da. CUOTA REAC_ELECARG"), (select id from product_groups where name="REACONDICIONAMIENTO Y RE DISEÑO ELEVADORES CARGA"), "ACADEMIA_GENESIS");
+INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="CUOTA REAC_ELECARG"), (select id from product_groups where name="REACONDICIONAMIENTO Y RE DISEÑO ELEVADORES CARGA"), "ACADEMIA_GENESIS");
 
 -- CONSTRUCCION Y RECONSTRUCCION DE DE CAPAS ASFALTICAS
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="MATRICULA 1 CONS_CAPASFA"), (select id from product_groups where name="CONSTRUCCION Y RECONSTRUCCION DE DE CAPAS ASFALTICAS"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="1era. CUOTA CONS_CAPASFA"), (select id from product_groups where name="CONSTRUCCION Y RECONSTRUCCION DE DE CAPAS ASFALTICAS"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="2da. CUOTA CONS_CAPASFA"), (select id from product_groups where name="CONSTRUCCION Y RECONSTRUCCION DE DE CAPAS ASFALTICAS"), "ACADEMIA_GENESIS");
+INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="CUOTA CONS_CAPASFA"), (select id from product_groups where name="CONSTRUCCION Y RECONSTRUCCION DE DE CAPAS ASFALTICAS"), "ACADEMIA_GENESIS");
 
 -- AUDITORIA FORENSE EMPRESARIAL
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="MATRICULA 1 AUD_FOR_EMPR"), (select id from product_groups where name="AUDITORIA FORENSE EMPRESARIAL"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="1era. CUOTA AUD_FOR_EMPR"), (select id from product_groups where name="AUDITORIA FORENSE EMPRESARIAL"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="2da. CUOTA AUD_FOR_EMPR"), (select id from product_groups where name="AUDITORIA FORENSE EMPRESARIAL"), "ACADEMIA_GENESIS");
+INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="CUOTA AUD_FOR_EMPR"), (select id from product_groups where name="AUDITORIA FORENSE EMPRESARIAL"), "ACADEMIA_GENESIS");
 
 -- DISEÑO COSTOS Y RECONSTRUCCION DRYWALL
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="MATRICULA 1 DIS_REC_DRY"), (select id from product_groups where name="DISEÑO COSTOS Y RECONSTRUCCION DRYWALL"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="1era. CUOTA DIS_REC_DRY"), (select id from product_groups where name="DISEÑO COSTOS Y RECONSTRUCCION DRYWALL"), "ACADEMIA_GENESIS");
-INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="2da. CUOTA DIS_REC_DRY"), (select id from product_groups where name="DISEÑO COSTOS Y RECONSTRUCCION DRYWALL"), "ACADEMIA_GENESIS");
+INSERT INTO product_groups_products (id_product, id_product_group, tenant) VALUES ((select id from products where name="CUOTA DIS_REC_DRY"), (select id from product_groups where name="DISEÑO COSTOS Y RECONSTRUCCION DRYWALL"), "ACADEMIA_GENESIS");

@@ -117,7 +117,7 @@ INSERT INTO tenants_users (username, tenant, created_by) VALUES
 ('carolina_perez', 'ACADEMIA_GENESIS', 'SysAdmin'),
 ('fabian_molina', 'ACADEMIA_GENESIS', 'SysAdmin');
 
--- Agregar roles a estudiantes (ACADEMIA_GENESIS_ESTUDIANTE, SCHOOL_ESTUDIANTE)
+-- Agregar roles a estudiantes (ACADEMIA_GENESIS_ESTUDIANTE)
 INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES
 ((SELECT id FROM users WHERE username = 'juan_perez'), (SELECT id FROM roles WHERE name = 'ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
 ((SELECT id FROM users WHERE username = 'ana_lopez'), (SELECT id FROM roles WHERE name = 'ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
@@ -177,7 +177,6 @@ INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES
 ((SELECT id FROM users WHERE username = 'patriciatorres'), (SELECT id FROM roles WHERE name = 'ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
 ((SELECT id FROM users WHERE username = 'estebanjimenez'), (SELECT id FROM roles WHERE name = 'ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
 
-
 INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'fernandoruiz'), (SELECT id FROM roles WHERE name = 'ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
 INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'aliciaparedes'), (SELECT id FROM roles WHERE name = 'ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
 INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'mariotorrez'), (SELECT id FROM roles WHERE name = 'ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
@@ -235,6 +234,124 @@ INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES
 ((SELECT id FROM users WHERE username = 'ricardo_salazar'), (SELECT id FROM roles WHERE name = 'ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
 ((SELECT id FROM users WHERE username = 'carolina_perez'), (SELECT id FROM roles WHERE name = 'ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
 ((SELECT id FROM users WHERE username = 'fabian_molina'), (SELECT id FROM roles WHERE name = 'ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+
+-- Agregar roles a estudiantes (SCHOOL_ESTUDIANTE)
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES
+((SELECT id FROM users WHERE username = 'juan_perez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'ana_lopez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'carlos_ramirez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'laura_fernandez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'miguel_garcia'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'sofia_martinez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'jose_hernandez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'maria_ruiz'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'andres_castillo'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'lucia_mendoza'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'diego_vega'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'carla_salinas'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'raul_paredes'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'elena_cruz'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'javier_diaz'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'natalia_jimenez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'oscar_alvarez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'isabel_ramos'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'hector_moreno'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'gabriela_santos'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'fernando_guerrero'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'patricia_mora'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'luis_pena'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'veronica_ortega'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'eduardo_rios'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'claudia_vargas'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'raul_diaz'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'maria_hernandez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'jorge_perez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'sofia_ramirez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'carlosmartinez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'mariaperez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'juansanchez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'anagonzalez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'luislopez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'sofiarodriguez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'pedrofernandez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'lauramorales'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'jorgejimenez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'valeriaruiz'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'ricardovargas'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'gabrielflores'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'andrescastillo'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'nataliasilva'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'oscartorres'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'lilianamedina'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'felipemolina'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'danielacruz'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'javierrojas'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'martavargas'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'diegogomez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'claudiaperez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'marcolopez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'silviarodriguez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'rafaelmendez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'patriciatorres'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'estebanjimenez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'fernandoruiz'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'aliciaparedes'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'mariotorrez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'elenagonzalez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'cristianrojas'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'lauracastro'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'joseperez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'vivianasalas'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'adriancano'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'camilaherrera'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'edgardorivera'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'andreavargas'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'nestorcarrillo'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'veronicaramirez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'gustavoruiz'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'carlamendoza'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'rodrigocelis'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'sofiaguzman'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'emilianoreyes'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'martaarce'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'ricardoruiz'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'tatianamendez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'sebastianvera'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'carolinamoya'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'alejandrogomez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'nataliasalas'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'franciscogodoy'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'mariaines'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'diegosuarez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'marianamorales'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'elisabethtorres'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'joelmontoya'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'maritzaherrera'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'luiscortez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES ((SELECT id FROM users WHERE username = 'yessicamurillo'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
+
+INSERT INTO users_roles (id_user, id_role, created_by, tenant) VALUES
+((SELECT id FROM users WHERE username = 'maria_rodriguez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'juan_carlos'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'laura_garcia'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'carlos_mendez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'ana_luisa'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'roberto_alvarez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'claudia_ruiz'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'andres_gomez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'veronica_diaz'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'diego_alonso'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'camila_ramos'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'alejandro_moreno'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'paula_gonzalez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'luis_fernando'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'isabel_munoz'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'daniel_herrera'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'monica_velasquez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'ricardo_salazar'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'carolina_perez'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS'),
+((SELECT id FROM users WHERE username = 'fabian_molina'), (SELECT id FROM roles WHERE name = 'SCHOOL_ESTUDIANTE'), 'SysAdmin', 'ACADEMIA_GENESIS');
 
 -- Materias para "DISEÑO PROGRAMACION DE SISTEMAS MONITOREO LOCAL Y REMOTO CON PLC, HMIS Y WEB"
 INSERT INTO escuela_materias (name, short_name, nota_maxima, tenant, created_by, creation_date) VALUES 
